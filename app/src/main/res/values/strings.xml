@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AsoRetry2016No2</string>
+    <string name="send_mail">メール</string>
+    <string name="search_google">Google</string>
+    <string name="button_send">送信</string>
+    <string name="subject">件名</string>
+    <string name="mail_to">1501028@st.asojuku.ac.jp</string>
+
+</resources>
