@@ -29,9 +29,24 @@
         android:layout_height="wrap_content"
         android:text="@string/button_send"
         android:id="@+id/button"
-        android:layout_below="@+id/editText"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp" />
+        android:layout_marginBottom="62dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <TextView android:text="@string/content" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:id="@+id/textView2"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>

@@ -26,10 +26,13 @@ public class Mail extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         EditText edit01 = (EditText)findViewById(R.id.editText);
         String title = edit01.getText().toString();
+        EditText edit02 = (EditText)findViewById(R.id.editText2);
+        String content = edit02.getText().toString();
         Resources res = getResources();
         Uri uri = Uri.parse("mailto:" + res.getString(R.string.mail_to).toString());
         Intent intent=new Intent(Intent.ACTION_SENDTO, uri);
         intent.putExtra(Intent.EXTRA_SUBJECT, title);
+        intent.putExtra(Intent.EXTRA_TEXT, content);
         startActivity(intent);
     }
 
